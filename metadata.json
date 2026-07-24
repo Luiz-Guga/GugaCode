@@ -1,0 +1,6 @@
+{
+  "name": "GugaCode - Linux AI Coding Assistant",
+  "description": "Assistente de IA estilo Claude Code otimizado para Nobara Linux e Fedora Linux (com suporte a Arch, Debian, Ubuntu), integrado ao Ollama local, Cloud LLMs, terminal nativo e GitHub.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

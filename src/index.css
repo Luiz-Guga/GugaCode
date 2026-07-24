@@ -1,0 +1,227 @@
+@import "tailwindcss";
+
+/* Fedora Light Mode & Global Theme Overrides */
+body.theme-light-fedora {
+  background-color: #f4f6f9 !important;
+  color: #0f172a !important;
+}
+
+body.theme-light-fedora header {
+  background-color: #ffffff !important;
+  border-color: #cbd5e1 !important;
+  color: #0f172a !important;
+}
+
+/* All dark backgrounds automatically map to crisp white/slate in Fedora Light mode */
+body.theme-light-fedora .bg-\[\#0f131d\],
+body.theme-light-fedora .bg-\[\#101522\],
+body.theme-light-fedora .bg-\[\#0d111a\],
+body.theme-light-fedora .bg-\[\#0c101a\],
+body.theme-light-fedora .bg-\[\#121827\],
+body.theme-light-fedora .bg-\[\#141b29\],
+body.theme-light-fedora .bg-\[\#151c2d\],
+body.theme-light-fedora .bg-\[\#151e30\],
+body.theme-light-fedora .bg-\[\#141c2e\],
+body.theme-light-fedora .bg-\[\#0d1320\],
+body.theme-light-fedora .bg-\[\#0e1320\],
+body.theme-light-fedora .bg-\[\#151d2c\],
+body.theme-light-fedora .bg-\[\#0b0f19\],
+body.theme-light-fedora .bg-\[\#131926\],
+body.theme-light-fedora .bg-\[\#151c2a\],
+body.theme-light-fedora .bg-\[\#111724\],
+body.theme-light-fedora .bg-\[\#141a26\],
+body.theme-light-fedora .bg-\[\#1e2738\],
+body.theme-light-fedora .bg-\[\#151d2f\],
+body.theme-light-fedora .bg-\[\#131a29\],
+body.theme-light-fedora .bg-\[\#0a0d14\],
+body.theme-light-fedora .bg-\[\#0a0e17\] {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+}
+
+body.theme-light-fedora .bg-\[\#161c2b\],
+body.theme-light-fedora .bg-\[\#131929\],
+body.theme-light-fedora .bg-\[\#111622\],
+body.theme-light-fedora .bg-\[\#182238\],
+body.theme-light-fedora .bg-\[\#1b2438\],
+body.theme-light-fedora .bg-\[\#1a2336\],
+body.theme-light-fedora .bg-\[\#1b263b\],
+body.theme-light-fedora .bg-\[\#172033\],
+body.theme-light-fedora .bg-\[\#1f283b\],
+body.theme-light-fedora .bg-\[\#212c42\],
+body.theme-light-fedora .bg-\[\#161e2e\] {
+  background-color: #f1f5f9 !important;
+  color: #0f172a !important;
+}
+
+body.theme-light-fedora .border-\[\#232a3b\],
+body.theme-light-fedora .border-\[\#232f48\],
+body.theme-light-fedora .border-\[\#212b3f\],
+body.theme-light-fedora .border-\[\#273248\],
+body.theme-light-fedora .border-\[\#273550\],
+body.theme-light-fedora .border-\[\#232d42\],
+body.theme-light-fedora .border-\[\#202d44\],
+body.theme-light-fedora .border-\[\#273859\],
+body.theme-light-fedora .border-\[\#253654\],
+body.theme-light-fedora .border-\[\#2e3e60\],
+body.theme-light-fedora .border-\[\#202d44\],
+body.theme-light-fedora .border-\[\#212b3e\],
+body.theme-light-fedora .border-\[\#232c3f\],
+body.theme-light-fedora .border-\[\#2a364d\],
+body.theme-light-fedora .border-\[\#2e3b54\],
+body.theme-light-fedora .border-\[\#2a3854\],
+body.theme-light-fedora .border-\[\#314366\] {
+  border-color: #cbd5e1 !important;
+}
+
+body.theme-light-fedora .text-slate-100,
+body.theme-light-fedora .text-slate-200 {
+  color: #0f172a !important;
+}
+
+body.theme-light-fedora .text-slate-300,
+body.theme-light-fedora .text-slate-400 {
+  color: #334155 !important;
+}
+
+body.theme-light-fedora kbd {
+  background-color: #e2e8f0 !important;
+  color: #0f172a !important;
+  border-color: #cbd5e1 !important;
+}
+
+body.theme-light-fedora input,
+body.theme-light-fedora textarea,
+body.theme-light-fedora select {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+  border-color: #cbd5e1 !important;
+}
+
+body.theme-light-fedora input::placeholder,
+body.theme-light-fedora textarea::placeholder {
+  color: #94a3b8 !important;
+}
+
+/* Custom scrollbar for light theme */
+body.theme-light-fedora ::-webkit-scrollbar-thumb {
+  background-color: #cbd5e1 !important;
+}
+
+/* =========================================================
+   PRISM SYNTAX HIGHLIGHTING CUSTOM STYLES (Dark & Light)
+   ========================================================= */
+
+/* Dark Theme Syntax Colors (dark-nobara) */
+.prism-dark .token.comment,
+.prism-dark .token.prolog,
+.prism-dark .token.doctype,
+.prism-dark .token.cdata {
+  color: #64748b;
+  font-style: italic;
+}
+
+.prism-dark .token.punctuation {
+  color: #94a3b8;
+}
+
+.prism-dark .token.property,
+.prism-dark .token.tag,
+.prism-dark .token.boolean,
+.prism-dark .token.number,
+.prism-dark .token.constant,
+.prism-dark .token.symbol,
+.prism-dark .token.deleted {
+  color: #fb923c;
+}
+
+.prism-dark .token.selector,
+.prism-dark .token.attr-name,
+.prism-dark .token.string,
+.prism-dark .token.char,
+.prism-dark .token.builtin,
+.prism-dark .token.inserted {
+  color: #34d399;
+}
+
+.prism-dark .token.operator,
+.prism-dark .token.entity,
+.prism-dark .token.url {
+  color: #38bdf8;
+}
+
+.prism-dark .token.atrule,
+.prism-dark .token.attr-value,
+.prism-dark .token.keyword {
+  color: #f43f5e;
+  font-weight: 600;
+}
+
+.prism-dark .token.function,
+.prism-dark .token.class-name {
+  color: #60a5fa;
+  font-weight: 600;
+}
+
+.prism-dark .token.regex,
+.prism-dark .token.important,
+.prism-dark .token.variable {
+  color: #c084fc;
+}
+
+/* Light Theme Syntax Colors (light-fedora) */
+.prism-light .token.comment,
+.prism-light .token.prolog,
+.prism-light .token.doctype,
+.prism-light .token.cdata {
+  color: #64748b;
+  font-style: italic;
+}
+
+.prism-light .token.punctuation {
+  color: #475569;
+}
+
+.prism-light .token.property,
+.prism-light .token.tag,
+.prism-light .token.boolean,
+.prism-light .token.number,
+.prism-light .token.constant,
+.prism-light .token.symbol,
+.prism-light .token.deleted {
+  color: #ea580c;
+}
+
+.prism-light .token.selector,
+.prism-light .token.attr-name,
+.prism-light .token.string,
+.prism-light .token.char,
+.prism-light .token.builtin,
+.prism-light .token.inserted {
+  color: #059669;
+}
+
+.prism-light .token.operator,
+.prism-light .token.entity,
+.prism-light .token.url {
+  color: #0284c7;
+}
+
+.prism-light .token.atrule,
+.prism-light .token.attr-value,
+.prism-light .token.keyword {
+  color: #d97706;
+  font-weight: 600;
+}
+
+.prism-light .token.function,
+.prism-light .token.class-name {
+  color: #2563eb;
+  font-weight: 600;
+}
+
+.prism-light .token.regex,
+.prism-light .token.important,
+.prism-light .token.variable {
+  color: #9333ea;
+}
